@@ -1,8 +1,8 @@
 /* style.css */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f4f4;
   color: #333;
 }
 
@@ -15,19 +15,19 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 header p {
-  margin: 8px 0 0;
-  font-size: 1.2rem;
+  margin: 5px 0 0;
+  font-size: 1.1rem;
 }
 
 nav {
   background-color: #004a80;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -46,7 +46,7 @@ main {
   max-width: 1000px;
   margin: 20px auto;
   background: #fff;
-  padding: 25px;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
