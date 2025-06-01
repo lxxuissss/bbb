@@ -1,16 +1,14 @@
-/* styles.css */
-
-/* Grundstruktur */
+/* style.css */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #1b1b1b; /* Dunkler Hintergrund */
-  color: #ffffff; /* Standard Schriftfarbe weiß */
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
-/* Header */
 header {
-  background-color: #e53935; /* Rot */
+  background: linear-gradient(90deg, #d32f2f, #1976d2, #00796b, #fbc02d);
+  color: white;
   padding: 20px;
   text-align: center;
 }
@@ -20,97 +18,62 @@ header h1 {
   font-size: 2rem;
 }
 
-/* Navigation */
 nav {
-  background-color: #039be5; /* Blau */
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  background-color: #333;
+  overflow: hidden;
 }
 
 nav a {
+  float: left;
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 20px;
   text-decoration: none;
-  padding: 15px 20px;
-  display: inline-block;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.3s;
 }
 
 nav a:hover {
-  background-color: #fbc02d; /* Gelb */
-  transform: translateY(-3px);
+  background-color: #555;
 }
 
-/* Main Content */
 main {
   padding: 20px;
 }
 
-/* Cards */
 .card {
-  background-color: rgba(38, 166, 154, 0.7); /* Türkis halbtransparent */
-  border-radius: 10px;
-  padding: 15px;
-  margin: 10px auto;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
   max-width: 600px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-  transition: transform 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Formulare */
-form {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 600px;
-  margin: 20px auto;
-}
-
-form label {
-  display: block;
-  margin-bottom: 5px;
-  color: #fbc02d; /* Gelb */
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: none;
-  border-radius: 5px;
-  background-color: #ffffff;
-  color: #000000;
-}
-
-/* Buttons */
 button {
-  background-color: #e53935; /* Rot */
+  background: linear-gradient(90deg, #d32f2f, #1976d2);
   color: white;
-  padding: 10px 20px;
   border: none;
-  border-radius: 6px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
   cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background 0.3s;
 }
 
 button:hover {
-  background-color: #fbc02d; /* Gelb */
-  transform: translateY(-2px);
+  background: linear-gradient(90deg, #1976d2, #d32f2f);
 }
 
-/* Footer */
 footer {
-  background-color: #039be5; /* Blau */
+  background-color: #333;
   color: white;
   text-align: center;
-  padding: 15px;
-  margin-top: 20px;
+  padding: 10px;
 }
-
