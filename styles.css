@@ -1,74 +1,70 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
+/* style.css */
 body {
-    background-color: #f5f5f5;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f0f0f0;
+  color: #333;
 }
 
 header {
-    background-color: #d32f2f;
-    color: #fff;
-    padding: 10px 0;
+  background-color: #0055a5;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
 }
 
-header nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+header h1 {
+  margin: 0;
+  font-size: 2rem;
 }
 
-header .logo h1 {
-    font-size: 24px;
+header p {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.9;
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
+nav {
+  background-color: #004080;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
 }
 
-header nav ul li {
-    margin-left: 20px;
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 main {
-    max-width: 1200px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-section h2 {
-    color: #d32f2f;
-    margin-bottom: 10px;
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 footer {
-    background-color: #d32f2f;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #0055a5;
+  border-bottom: 2px solid #0055a5;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
