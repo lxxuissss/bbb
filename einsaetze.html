@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Einsätze - Rettungsdienstsoftware</title>
+  <title>Einsätze - Einsatzmeldungen</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Rettungsdienstsoftware</h1>
-    <p>Dein Herzensprojekt für eine moderne Leitstellensoftware</p>
+    <h1>Einsatzmeldungen</h1>
+    <p>Live-Infos zu aktuellen Ereignissen in deiner Region</p>
   </header>
-  
+
   <nav>
     <a href="index.html">Start</a>
     <a href="notrufnummern.html">Notrufnummern</a>
@@ -19,12 +19,27 @@
     <a href="ueberuns.html">Über uns</a>
     <a href="kontakt.html">Kontakt</a>
   </nav>
-  
+
   <main>
-    <h2>Aktuelle Einsätze</h2>
-    <p>Hier findest du aktuelle Informationen zu Einsätzen in deiner Region.</p>
+    <h2>Neuen Einsatz melden</h2>
+    <form>
+      <label for="title">Titel des Einsatzes</label>
+      <input type="text" id="title" name="title" placeholder="z. B. Unfall A38" required>
+
+      <label for="description">Beschreibung</label>
+      <textarea id="description" name="description" rows="5" placeholder="Hier kannst du beschreiben, was passiert ist." required></textarea>
+
+      <button type="submit">Melden</button>
+    </form>
+
+    <h2>Aktuelle Einsatzmeldungen</h2>
+    <ul>
+      <li><strong>Unfall A38:</strong> Fahrzeugüberschlag – Polizei und Rettungsdienst vor Ort.</li>
+      <li><strong>Polizeikontrolle Innenstadt:</strong> Verkehrsbehinderungen möglich.</li>
+      <li><strong>Feuerwehreinsatz Hauptstraße:</strong> Brennender Mülleimer.</li>
+    </ul>
   </main>
-  
+
   <footer>
     &copy; 2025 Rettungsdienstsoftware. Alle Rechte vorbehalten.
   </footer>
