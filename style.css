@@ -111,3 +111,29 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #fdd835;
 }
+.einsatz-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.einsatz-card {
+    background: #ffffff;
+    border-left: 5px solid #b71c1c; /* roter Balken links */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    transition: transform 0.2s;
+}
+
+.einsatz-card:hover {
+    transform: translateY(-5px);
+}
+
+.einsatz-card h3 {
+    margin-top: 0;
+    color: #b71c1c;
+}
