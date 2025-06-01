@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Einsätze - Einsatzmeldungen</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Einsatzmeldungen</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Einsätze</h1>
-    <p>Live-Infos zu aktuellen Ereignissen in deiner Region</p>
-  </header>
+    <header>
+        <h1>Einsatzmeldungen</h1>
+        <p>Aktuelle Einsatzmeldungen aus deiner Region</p>
+    </header>
 
-  <nav>
-    <a href="index.html">Start</a>
-    <a href="notrufnummern.html">Notrufnummern</a>
-    <a href="einsaetze.html">Einsätze</a>
-    <a href="ueberuns.html">Über uns</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
+    <nav>
+        <a href="index.html">Start</a>
+        <a href="einsaetze.html">Einsätze</a>
+        <a href="notrufnummern.html">Notrufnummern</a>
+        <a href="ueberuns.html">Über uns</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
 
-  <main>
-    <h2>Neuen Einsatz melden</h2>
-    <form>
-      <label for="title">Titel des Einsatzes</label>
-      <input type="text" id="title" name="title" placeholder="z. B. Unfall A38" required>
+    <main>
+        <h2>Aktuelle Einsätze</h2>
+        <section class="einsatz-container">
+            <div class="einsatz-card">
+                <h3>🚑 Verkehrsunfall - Beispielstadt</h3>
+                <p><strong>Datum:</strong> 29. Mai 2025</p>
+                <p><strong>Beschreibung:</strong> Verkehrsunfall auf der A38, Rettungsdienst und Feuerwehr vor Ort.</p>
+            </div>
 
-      <label for="description">Beschreibung</label>
-      <textarea id="description" name="description" rows="5" placeholder="Hier kannst du beschreiben, was passiert ist." required></textarea>
+            <div class="einsatz-card">
+                <h3>🚒 Wohnungsbrand - Musterstadt</h3>
+                <p><strong>Datum:</strong> 28. Mai 2025</p>
+                <p><strong>Beschreibung:</strong> Feuerwehr im Einsatz, mehrere Personen evakuiert.</p>
+            </div>
 
-      <button type="submit">Melden</button>
-    </form>
+            <!-- Weitere Einsatzkarten können hier hinzugefügt werden -->
+        </section>
+    </main>
 
-    <h2>Aktuelle Einsatzmeldungen</h2>
-    <ul>
-      <li><strong>Unfall A38:</strong> Fahrzeugüberschlag – Polizei und Rettungsdienst vor Ort.</li>
-      <li><strong>Polizeikontrolle Innenstadt:</strong> Verkehrsbehinderungen möglich.</li>
-      <li><strong>Feuerwehreinsatz Hauptstraße:</strong> Brennender Mülleimer.</li>
-    </ul>
-  </main>
-
-  <footer>
-    &copy; 2025 Einsatzmeldungen. Alle Rechte vorbehalten.
-  </footer>
+    <footer>
+        © 2025 Einsatzmeldung – Alle Rechte vorbehalten.
+    </footer>
 </body>
 </html>
