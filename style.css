@@ -137,3 +137,71 @@ input[type="submit"]:hover {
     margin-top: 0;
     color: #b71c1c;
 }
+/* Modernes Design für Startseite */
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #ff4d4d, #ffcc00);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: white;
+  color: #ff4d4d;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero .btn:hover {
+  background: #ff4d4d;
+  color: white;
+}
+
+.highlight {
+  padding: 40px 20px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.about {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
