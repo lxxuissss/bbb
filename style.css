@@ -43,6 +43,7 @@ main {
 
 .card {
   background-color: white;
+  border: 2px solid #d32f2f; /* Roter Rahmen für mehr Farbe */
   border-radius: 8px;
   padding: 20px;
   margin: 20px auto;
@@ -69,6 +70,23 @@ button {
 
 button:hover {
   background: linear-gradient(90deg, #1976d2, #d32f2f);
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #d32f2f;
+  outline: none;
+  box-shadow: 0 0 5px rgba(211,47,47,0.5);
 }
 
 footer {
