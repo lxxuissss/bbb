@@ -2,31 +2,58 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Startseite - Einsatzmeldungen</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Einsatzmeldungen – Startseite</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Einsatzmeldungen</h1>
-    <p>Dein Portal für aktuelle Einsätze in deiner Region</p>
+    <div class="logo">
+      <img src="logo.png" alt="Einsatzmeldungen Logo">
+      <h1>Einsatzmeldungen</h1>
+    </div>
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="einsätze.html">Einsätze</a>
+      <a href="notrufnummern.html">Notrufnummern</a>
+      <a href="über_uns.html">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="index.html">Start</a>
-    <a href="notrufnummern.html">Notrufnummern</a>
-    <a href="einsaetze.html">Einsätze</a>
-    <a href="ueberuns.html">Über uns</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
-
   <main>
-    <h2>Willkommen!</h2>
-    <p>Hier findest du alle aktuellen Einsatzmeldungen, Notrufnummern und wichtige Informationen rund um deine Region.</p>
+    <section class="hero">
+      <h2>Herzlich Willkommen bei Einsatzmeldungen!</h2>
+      <p>Bleib immer auf dem Laufenden über aktuelle Geschehnisse, Unfälle und Gefahrenlagen in deiner Umgebung.</p>
+      <a href="einsätze.html" class="btn">Zu den Einsätzen</a>
+    </section>
+
+    <section class="highlight">
+      <h2>Neueste Meldungen</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>Verkehrsunfall A38</h3>
+          <p>Stau in Richtung Göttingen nach Auffahrunfall, bitte vorsichtig fahren!</p>
+        </div>
+        <div class="card">
+          <h3>Polizeikontrolle B80</h3>
+          <p>Geschwindigkeitskontrollen in Richtung Halle, bitte Geschwindigkeit anpassen!</p>
+        </div>
+        <div class="card">
+          <h3>Feuer in Musterstadt</h3>
+          <p>Feuerwehr im Einsatz – Rettungswege freihalten!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>Über uns</h2>
+      <p>Wir sind eine Plattform für Einsatzmeldungen, Staumeldungen und Gefahrenlagen in deiner Umgebung.  
+      Mit uns bleibst du immer informiert und sicher unterwegs!</p>
+    </section>
   </main>
 
   <footer>
-    &copy; 2025 Einsatzmeldungen. Alle Rechte vorbehalten.
+    <p>&copy; 2025 Einsatzmeldungen. Alle Rechte vorbehalten.</p>
   </footer>
 </body>
 </html>
