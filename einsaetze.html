@@ -2,12 +2,15 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Einsatzmeldungen</title>
+  <title>Einsätze</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Einsatzmeldungen</h1>
+    <div class="logo">
+      <img src="logo.png" alt="Einsatzmeldungen Logo">
+      <h1>Einsatzmeldungen</h1>
+    </div>
     <nav>
       <a href="index.html">Start</a>
       <a href="einsätze.html">Einsätze</a>
@@ -18,57 +21,27 @@
   </header>
 
   <main>
-    <section class="einsatz-melden">
-      <h2>Neuen Einsatz melden</h2>
-      <form id="einsatzForm">
-        <label for="titel">Titel des Einsatzes:</label>
-        <input type="text" id="titel" required>
-        <label for="beschreibung">Beschreibung:</label>
-        <textarea id="beschreibung" required></textarea>
-        <button type="submit">Absenden</button>
-      </form>
+    <section class="hero">
+      <h2>Aktuelle Einsätze</h2>
+      <p>Hier findest du alle aktuellen Einsatzmeldungen aus deiner Region.</p>
     </section>
 
-    <section class="einsatz-übersicht">
-      <h2>Aktuelle Einsätze</h2>
-      <div id="einsatzContainer" class="einsatz-container"></div>
+    <section class="highlight">
+      <div class="card-container">
+        <div class="card">
+          <h3>Verkehrsunfall A38</h3>
+          <p>Stau in Richtung Göttingen nach Auffahrunfall, bitte vorsichtig fahren!</p>
+        </div>
+        <div class="card">
+          <h3>Polizeikontrolle B80</h3>
+          <p>Geschwindigkeitskontrollen in Richtung Halle, bitte Geschwindigkeit anpassen!</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Einsatzmeldungen. Alle Rechte vorbehalten.</p>
   </footer>
-
-  <script>
-    // LocalStorage laden
-    document.addEventListener("DOMContentLoaded", () => {
-      const einsatzContainer = document.getElementById("einsatzContainer");
-      const gespeicherteEinsätze = JSON.parse(localStorage.getItem("einsätze")) || [];
-
-      gespeicherteEinsätze.forEach(einsatz => {
-        einsatzContainer.innerHTML += `
-          <div class="einsatz-card">
-            <h3>${einsatz.titel}</h3>
-            <p>${einsatz.beschreibung}</p>
-          </div>
-        `;
-      });
-    });
-
-    // LocalStorage speichern
-    document.getElementById("einsatzForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      const titel = document.getElementById("titel").value;
-      const beschreibung = document.getElementById("beschreibung").value;
-
-      const neuerEinsatz = { titel, beschreibung };
-
-      let einsätze = JSON.parse(localStorage.getItem("einsätze")) || [];
-      einsätze.push(neuerEinsatz);
-      localStorage.setItem("einsätze", JSON.stringify(einsätze));
-
-      window.location.reload();
-    });
-  </script>
 </body>
 </html>
