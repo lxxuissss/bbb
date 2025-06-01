@@ -2,22 +2,20 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: linear-gradient(to right, #f9f9f9, #e0e0e0);
+  background: #f5f5f5;
   color: #333;
 }
 
 header {
-  background: linear-gradient(to right, #0077cc, #005fa3);
+  background-color: #b71c1c;
   color: white;
-  padding: 30px 20px;
+  padding: 25px;
   text-align: center;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
 header h1 {
   margin: 0;
   font-size: 2.5rem;
-  letter-spacing: 1px;
 }
 
 header p {
@@ -26,23 +24,22 @@ header p {
 }
 
 nav {
-  background-color: #004a80;
+  background-color: #d32f2f;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav a {
-  color: #fff;
+  color: white;
   text-decoration: none;
-  padding: 15px 25px;
+  padding: 15px 20px;
   display: block;
   transition: background-color 0.3s;
 }
 
 nav a:hover {
-  background-color: #00345c;
+  background-color: #b71c1c;
 }
 
 main {
@@ -55,8 +52,8 @@ main {
 }
 
 h2 {
-  color: #0077cc;
-  border-bottom: 3px solid #0077cc;
+  color: #b71c1c;
+  border-bottom: 3px solid #d32f2f;
   padding-bottom: 5px;
   margin-bottom: 20px;
 }
@@ -74,7 +71,7 @@ ul li {
 
 ul li::before {
   content: "•";
-  color: #0077cc;
+  color: #b71c1c;
   position: absolute;
   left: 0;
 }
@@ -94,13 +91,13 @@ form input, form textarea {
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  background: #f9f9f9;
+  background: #fafafa;
 }
 
 form button {
   margin-top: 15px;
   padding: 12px;
-  background-color: #0077cc;
+  background-color: #d32f2f;
   color: white;
   border: none;
   border-radius: 6px;
@@ -109,7 +106,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #005fa3;
+  background-color: #b71c1c;
 }
 
 footer {
@@ -118,5 +115,5 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 30px;
-  border-top: 2px solid #0077cc;
+  border-top: 2px solid #d32f2f;
 }
