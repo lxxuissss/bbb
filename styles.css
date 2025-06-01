@@ -1,70 +1,67 @@
 /* style.css */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
   color: #333;
 }
 
 header {
-  background-color: #0055a5;
-  color: white;
-  padding: 1rem 0;
+  background-color: #0077cc;
+  color: #fff;
   text-align: center;
+  padding: 20px;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 header p {
-  margin: 0;
+  margin: 5px 0 0;
   font-size: 1rem;
   opacity: 0.9;
 }
 
 nav {
-  background-color: #004080;
+  background-color: #005fa3;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0.5rem 0;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  padding: 14px 20px;
+  display: block;
   transition: background-color 0.3s;
 }
 
 nav a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #004a80;
 }
 
 main {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 20px auto;
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #333;
-  color: white;
-  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 h2 {
-  color: #0055a5;
-  border-bottom: 2px solid #0055a5;
+  border-bottom: 2px solid #0077cc;
   padding-bottom: 5px;
   margin-bottom: 15px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
 }
