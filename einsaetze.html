@@ -1,45 +1,74 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Einsatzmeldungen</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Einsatzmeldungen</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Einsatzmeldungen</h1>
-        <p>Aktuelle Einsatzmeldungen aus deiner Region</p>
-    </header>
-
+  <header>
+    <h1>Einsatzmeldungen</h1>
     <nav>
-        <a href="index.html">Start</a>
-        <a href="einsaetze.html">Einsätze</a>
-        <a href="notrufnummern.html">Notrufnummern</a>
-        <a href="ueberuns.html">Über uns</a>
-        <a href="kontakt.html">Kontakt</a>
+      <a href="index.html">Start</a>
+      <a href="einsätze.html">Einsätze</a>
+      <a href="notrufnummern.html">Notrufnummern</a>
+      <a href="über_uns.html">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
     </nav>
+  </header>
 
-    <main>
-        <h2>Aktuelle Einsätze</h2>
-        <section class="einsatz-container">
-            <div class="einsatz-card">
-                <h3>🚑 Verkehrsunfall - Beispielstadt</h3>
-                <p><strong>Datum:</strong> 29. Mai 2025</p>
-                <p><strong>Beschreibung:</strong> Verkehrsunfall auf der A38, Rettungsdienst und Feuerwehr vor Ort.</p>
-            </div>
+  <main>
+    <section class="einsatz-melden">
+      <h2>Neuen Einsatz melden</h2>
+      <form id="einsatzForm">
+        <label for="titel">Titel des Einsatzes:</label>
+        <input type="text" id="titel" required>
+        <label for="beschreibung">Beschreibung:</label>
+        <textarea id="beschreibung" required></textarea>
+        <button type="submit">Absenden</button>
+      </form>
+    </section>
 
-            <div class="einsatz-card">
-                <h3>🚒 Wohnungsbrand - Musterstadt</h3>
-                <p><strong>Datum:</strong> 28. Mai 2025</p>
-                <p><strong>Beschreibung:</strong> Feuerwehr im Einsatz, mehrere Personen evakuiert.</p>
-            </div>
+    <section class="einsatz-übersicht">
+      <h2>Aktuelle Einsätze</h2>
+      <div id="einsatzContainer" class="einsatz-container"></div>
+    </section>
+  </main>
 
-            <!-- Weitere Einsatzkarten können hier hinzugefügt werden -->
-        </section>
-    </main>
+  <footer>
+    <p>&copy; 2025 Einsatzmeldungen. Alle Rechte vorbehalten.</p>
+  </footer>
 
-    <footer>
-        © 2025 Einsatzmeldung – Alle Rechte vorbehalten.
-    </footer>
+  <script>
+    // LocalStorage laden
+    document.addEventListener("DOMContentLoaded", () => {
+      const einsatzContainer = document.getElementById("einsatzContainer");
+      const gespeicherteEinsätze = JSON.parse(localStorage.getItem("einsätze")) || [];
+
+      gespeicherteEinsätze.forEach(einsatz => {
+        einsatzContainer.innerHTML += `
+          <div class="einsatz-card">
+            <h3>${einsatz.titel}</h3>
+            <p>${einsatz.beschreibung}</p>
+          </div>
+        `;
+      });
+    });
+
+    // LocalStorage speichern
+    document.getElementById("einsatzForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const titel = document.getElementById("titel").value;
+      const beschreibung = document.getElementById("beschreibung").value;
+
+      const neuerEinsatz = { titel, beschreibung };
+
+      let einsätze = JSON.parse(localStorage.getItem("einsätze")) || [];
+      einsätze.push(neuerEinsatz);
+      localStorage.setItem("einsätze", JSON.stringify(einsätze));
+
+      window.location.reload();
+    });
+  </script>
 </body>
 </html>
