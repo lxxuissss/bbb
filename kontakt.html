@@ -2,20 +2,20 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Kontakt</title>
+  <title>Kontakt - Einsatzmeldungen</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <div class="logo">
-      <img src="logo.png" alt="Einsatzmeldungen Logo">
+      <img src="logo.png" alt="Logo">
       <h1>Einsatzmeldungen</h1>
     </div>
     <nav>
       <a href="index.html">Start</a>
-      <a href="einsätze.html">Einsätze</a>
+      <a href="einsaetze.html">Einsätze</a>
       <a href="notrufnummern.html">Notrufnummern</a>
-      <a href="über_uns.html">Über uns</a>
+      <a href="ueber_uns.html">Über uns</a>
       <a href="kontakt.html">Kontakt</a>
     </nav>
   </header>
@@ -23,17 +23,19 @@
   <main>
     <section class="hero">
       <h2>Kontakt</h2>
-      <p>Schreibe uns eine Nachricht oder sende eine Einsatzmeldung ein.</p>
+      <p>Fragen, Anregungen oder Hinweise? Melde dich gerne bei uns!</p>
     </section>
 
     <section class="highlight">
       <div class="card">
         <form>
-          <label for="name">Dein Name:</label><br>
+          <label for="name">Name:</label><br>
           <input type="text" id="name" name="name" required><br><br>
+          <label for="email">E-Mail:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
           <label for="message">Nachricht:</label><br>
           <textarea id="message" name="message" rows="5" required></textarea><br><br>
-          <button type="submit">Senden</button>
+          <button type="submit">Nachricht senden</button>
         </form>
       </div>
     </section>
