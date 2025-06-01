@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Einsatz hinzufügen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Einsatz hinzufügen</h1>
+        <nav>
+            <a href="index.html">Start</a>
+            <a href="notrufnummern.html">Notrufnummern</a>
+            <a href="einsaetze.html">Einsätze</a>
+            <a href="über_uns.html">Über uns</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="admin-form">
+            <h2>Neuen Einsatz hinzufügen</h2>
+            <form id="einsatzForm">
+                <label for="titel">Titel:</label>
+                <input type="text" id="titel" name="titel" required>
+
+                <label for="beschreibung">Beschreibung:</label>
+                <textarea id="beschreibung" name="beschreibung" required></textarea>
+
+                <label for="datum">Datum/Uhrzeit (optional):</label>
+                <input type="text" id="datum" name="datum">
+
+                <button type="submit">Einsatz speichern</button>
+            </form>
+            <p id="feedback"></p>
+        </section>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>
 
