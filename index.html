@@ -4,35 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rettungsdienstsoftware</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 20px;
-        }
-        header {
-            background-color: #004080;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        main {
-            margin-top: 20px;
-        }
-        h1 {
-            font-size: 24px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Rettungsdienstsoftware</h1>
-        <p>Dein Herzensprojekt für moderne Leitstellen-Software</p>
+        <h1>🚑 Rettungsdienstsoftware</h1>
+        <p>Dein Herzensprojekt – moderne Leitstellensoftware</p>
     </header>
+
     <main>
-        <h2>Willkommen!</h2>
-        <p>Hier entsteht deine Software für den Rettungsdienst. Bald gibt es hier mehr Inhalte!</p>
-        <p><strong>Notrufnummern:</strong> 112 (Europaweit), 110 (Polizei), Kummernummer: <em>hier eintragen</em></p>
+        <section id="notrufnummern">
+            <h2>Notrufnummern</h2>
+            <ul>
+                <li>112 – Feuerwehr / Rettungsdienst</li>
+                <li>110 – Polizei</li>
+                <li>116117 – Ärztlicher Bereitschaftsdienst</li>
+            </ul>
+        </section>
+
+        <section id="kontakt">
+            <h2>Kontaktformular</h2>
+            <form action="mailto:deine.email@domain.de" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="nachricht">Nachricht:</label>
+                <textarea id="nachricht" name="nachricht" rows="4" required></textarea>
+                <br>
+                <button type="submit">Senden</button>
+            </form>
+        </section>
     </main>
+
+    <footer>
+        <p>&copy; 2025 Rettungsdienstsoftware – Alle Rechte vorbehalten.</p>
+    </footer>
 </body>
 </html>
