@@ -2,42 +2,45 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt - Rettungsdienstsoftware</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Rettungsdienstsoftware</h1>
-    <p>Dein Herzensprojekt für eine moderne Leitstellensoftware</p>
+    <div class="logo">
+      <img src="logo.png" alt="Einsatzmeldungen Logo">
+      <h1>Einsatzmeldungen</h1>
+    </div>
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="einsätze.html">Einsätze</a>
+      <a href="notrufnummern.html">Notrufnummern</a>
+      <a href="über_uns.html">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
   </header>
-  
-  <nav>
-    <a href="index.html">Start</a>
-    <a href="notrufnummern.html">Notrufnummern</a>
-    <a href="einsaetze.html">Einsätze</a>
-    <a href="ueberuns.html">Über uns</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
-  
+
   <main>
-    <h2>Kontakt</h2>
-    <form>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
+    <section class="hero">
+      <h2>Kontakt</h2>
+      <p>Schreibe uns eine Nachricht oder sende eine Einsatzmeldung ein.</p>
+    </section>
 
-      <label for="email">E-Mail</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Nachricht</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit">Nachricht senden</button>
-    </form>
+    <section class="highlight">
+      <div class="card">
+        <form>
+          <label for="name">Dein Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+          <label for="message">Nachricht:</label><br>
+          <textarea id="message" name="message" rows="5" required></textarea><br><br>
+          <button type="submit">Senden</button>
+        </form>
+      </div>
+    </section>
   </main>
-  
+
   <footer>
-    &copy; 2025 Rettungsdienstsoftware. Alle Rechte vorbehalten.
+    <p>&copy; 2025 Einsatzmeldungen. Alle Rechte vorbehalten.</p>
   </footer>
 </body>
 </html>
