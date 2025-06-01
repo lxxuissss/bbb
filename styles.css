@@ -2,14 +2,14 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
   color: #333;
 }
 
 header {
-  background-color: #0077cc;
+  background: linear-gradient(to right, #005fa3, #0077cc);
   color: #fff;
-  padding: 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
@@ -19,42 +19,92 @@ header h1 {
 }
 
 header p {
-  margin: 5px 0 0;
-  font-size: 1rem;
+  margin: 8px 0 0;
+  font-size: 1.2rem;
 }
 
 nav {
-  background-color: #005fa3;
+  background-color: #004a80;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
-  padding: 14px 20px;
+  padding: 15px 20px;
+  display: block;
   transition: background-color 0.3s;
 }
 
 nav a:hover {
-  background-color: #004a80;
+  background-color: #00345c;
 }
 
 main {
   max-width: 1000px;
   margin: 20px auto;
-  background-color: #fff;
-  padding: 20px;
+  background: #fff;
+  padding: 25px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
 h2 {
   color: #0077cc;
-  border-bottom: 2px solid #0077cc;
+  border-bottom: 3px solid #0077cc;
   padding-bottom: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+ul li::before {
+  content: "•";
+  color: #0077cc;
+  position: absolute;
+  left: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005fa3;
 }
 
 footer {
@@ -62,5 +112,5 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
