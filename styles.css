@@ -2,25 +2,27 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #f4f4f4;
+  background: linear-gradient(to right, #f9f9f9, #e0e0e0);
   color: #333;
 }
 
 header {
-  background: linear-gradient(to right, #005fa3, #0077cc);
-  color: #fff;
+  background: linear-gradient(to right, #0077cc, #005fa3);
+  color: white;
   padding: 30px 20px;
   text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
 }
 
 header p {
   margin: 5px 0 0;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 nav {
@@ -28,12 +30,13 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
-  padding: 15px 20px;
+  padding: 15px 25px;
   display: block;
   transition: background-color 0.3s;
 }
@@ -44,11 +47,11 @@ nav a:hover {
 
 main {
   max-width: 1000px;
-  margin: 20px auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 h2 {
@@ -87,10 +90,11 @@ form label {
 }
 
 form input, form textarea {
-  padding: 10px;
+  padding: 12px;
   margin-top: 5px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
+  background: #f9f9f9;
 }
 
 form button {
@@ -99,8 +103,9 @@ form button {
   background-color: #0077cc;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 form button:hover {
@@ -111,6 +116,7 @@ footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   margin-top: 30px;
+  border-top: 2px solid #0077cc;
 }
