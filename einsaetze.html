@@ -1,53 +1,38 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Einsätze</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Einsätze</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Einsätze</h1>
-        <nav>
-            <a href="index.html">Start</a>
-            <a href="notrufnummern.html">Notrufnummern</a>
-            <a href="einsaetze.html">Einsätze</a>
-            <a href="über_uns.html">Über uns</a>
-            <a href="kontakt.html">Kontakt</a>
-        </nav>
-    </header>
+  <header>
+    <h1>Einsätze</h1>
+    <nav>
+      <a href="index.html">Startseite</a>
+      <a href="einsätze.html">Einsätze</a>
+      <a href="notrufnummern.html">Notrufnummern</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
 
-    <main>
-        <section class="einsatz-liste">
-            <h2>Alle Einsätze</h2>
-            <div id="einsatzListe"></div>
-        </section>
-    </main>
+  <main>
+    <section class="einsatz-liste">
+      <div class="einsatz-bubble">
+        <h3>Einsatz 1</h3>
+        <p>Beschreibung des Einsatzes...</p>
+      </div>
+      <div class="einsatz-bubble">
+        <h3>Einsatz 2</h3>
+        <p>Beschreibung des Einsatzes...</p>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Dein Name. Alle Rechte vorbehalten.</p>
-    </footer>
-
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const container = document.getElementById('einsatzListe');
-            const einsaetze = JSON.parse(localStorage.getItem('einsaetze')) || [];
-
-            if (einsaetze.length === 0) {
-                container.innerHTML = '<p>Keine Einsätze vorhanden.</p>';
-            } else {
-                einsaetze.forEach(einsatz => {
-                    const card = document.createElement('div');
-                    card.classList.add('einsatz-card');
-                    card.innerHTML = `
-                        <h3>${einsatz.titel}</h3>
-                        <p>${einsatz.beschreibung}</p>
-                        ${einsatz.datum ? `<p><strong>Datum/Uhrzeit:</strong> ${einsatz.datum}</p>` : ''}
-                    `;
-                    container.appendChild(card);
-                });
-            }
-        });
-    </script>
+  <footer>
+    <p>&copy; 2025 Deine Seite. Alle Rechte vorbehalten.</p>
+  </footer>
 </body>
 </html>
