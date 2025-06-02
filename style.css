@@ -1,183 +1,146 @@
-/* Globales Styling */
+/* Gesamtes Seitenlayout */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #FF0000, #FFA500, #FFFF00);
-    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e53935, #ffeb3b);
+    min-height: 100vh;
+    color: #333;
 }
 
+/* Kopfbereich (Header) */
 header {
-    background: linear-gradient(to right, #FF0000, #FFA500, #FFFF00);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
     padding: 20px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+/* Navigation */
+nav {
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+    flex-wrap: wrap;
 }
 
 nav a {
-    color: white;
     text-decoration: none;
-    margin: 0 10px;
+    color: white;
     font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background 0.3s, transform 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
-    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
 }
 
-/* Hero-Bereich */
-.hero {
-    background: rgba(255, 0, 0, 0.7);
-    padding: 40px;
-    text-align: center;
-    margin: 20px;
-    border-radius: 10px;
-}
-
-.hero h2 {
-    margin-top: 0;
-    font-size: 2em;
-}
-
-.info {
-    background: rgba(255, 69, 0, 0.7);
+/* Hauptbereich */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
     padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Kontaktbereich */
+.kontakt-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.kontakt-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #e53935;
+}
+
+.kontakt-formular {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.kontakt-formular label {
+    font-weight: bold;
+    color: #333;
+}
+
+.kontakt-formular input[type="text"],
+.kontakt-formular input[type="email"],
+.kontakt-formular textarea {
+    padding: 10px;
+    border: 2px solid #e53935;
+    border-radius: 8px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.kontakt-formular input[type="text"]:focus,
+.kontakt-formular input[type="email"]:focus,
+.kontakt-formular textarea:focus {
+    border-color: #ffeb3b;
+    box-shadow: 0 0 8px rgba(255, 235, 59, 0.5);
+}
+
+.kontakt-formular textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.kontakt-formular button {
+    background: linear-gradient(to right, #e53935, #ffeb3b);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.kontakt-formular button:hover {
+    background: linear-gradient(to right, #ffeb3b, #e53935);
+    transform: translateY(-3px);
 }
 
 /* Footer */
 footer {
-    background: linear-gradient(to right, #FF0000, #FFA500, #FFFF00);
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Admin-Bereich (versteckt) */
-#adminForm {
-    display: none;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-}
-
-/* Button-Style */
-button {
-    background: #FF0000;
+    background: rgba(0, 0, 0, 0.7);
     color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 4px solid #ffeb3b;
 }
 
-button:hover {
-    background: #FFA500;
-    transform: scale(1.05);
-}
-/* Kontaktbereich */
-#kontakt {
-  background: linear-gradient(to right, #ff4b2b, #ff416c);
-  color: #fff;
-  padding: 60px 20px;
-  text-align: center;
-}
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-#kontakt h2 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-#kontakt p {
-  font-size: 1.1em;
-  margin-bottom: 30px;
-}
-
-#kontakt .container {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.form-group {
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.form-group label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.form-group i {
-  margin-right: 8px;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1em;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
-  background-color: #fff;
-  color: #000;
-}
-
-.btn {
-  background: #fff;
-  color: #ff416c;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 30px;
-  font-size: 1.1em;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  background: #ff416c;
-  color: #fff;
-  transform: translateY(-3px);
-  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
-}
-
-/* Notfallbox */
-.notfall-box {
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid #fff;
-  border-radius: 10px;
-  padding: 20px;
-  margin-top: 40px;
-}
-
-.notfall-box h3 {
-  margin-top: 0;
-  font-size: 1.5em;
-}
-
-.notfall-box p {
-  margin: 5px 0;
-}
-
-.notfall-box a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.notfall-box a:hover {
-  text-decoration: none;
+    header h1 {
+        font-size: 2em;
+    }
 }
