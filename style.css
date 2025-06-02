@@ -82,3 +82,102 @@ button:hover {
     background: #FFA500;
     transform: scale(1.05);
 }
+/* Kontaktbereich */
+#kontakt {
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#kontakt h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+#kontakt p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+#kontakt .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group i {
+  margin-right: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+  background-color: #fff;
+  color: #000;
+}
+
+.btn {
+  background: #fff;
+  color: #ff416c;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #ff416c;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+/* Notfallbox */
+.notfall-box {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.notfall-box h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.notfall-box p {
+  margin: 5px 0;
+}
+
+.notfall-box a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.notfall-box a:hover {
+  text-decoration: none;
+}
