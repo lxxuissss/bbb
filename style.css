@@ -1,27 +1,27 @@
-/* Gesamtes Seitenlayout */
-body {
+/* Reset */
+* {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #e53935, #ffeb3b);
-    min-height: 100vh;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Kopfbereich (Header) */
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e53935, #ffeb3b);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
 header {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(50, 50, 50, 0.8);
     color: white;
     padding: 20px;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    letter-spacing: 1px;
+    border-bottom: 4px solid #ffeb3b;
 }
 
 /* Navigation */
@@ -29,7 +29,7 @@ nav {
     background: rgba(255, 255, 255, 0.2);
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     padding: 10px;
     flex-wrap: wrap;
 }
@@ -45,25 +45,26 @@ nav a {
 
 nav a:hover {
     background: rgba(255, 255, 255, 0.3);
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 }
 
-/* Hauptbereich */
+/* Main Container */
 main {
+    flex: 1;
     max-width: 1200px;
-    margin: 30px auto;
+    margin: 20px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
 /* Kontaktbereich */
 .kontakt-container {
-    background: white;
+    background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .kontakt-container h2 {
@@ -81,25 +82,26 @@ main {
 
 .kontakt-formular label {
     font-weight: bold;
-    color: #333;
+    color: #555;
 }
 
 .kontakt-formular input[type="text"],
 .kontakt-formular input[type="email"],
 .kontakt-formular textarea {
-    padding: 10px;
-    border: 2px solid #e53935;
+    padding: 12px;
+    border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 1em;
     outline: none;
     transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #fff;
 }
 
 .kontakt-formular input[type="text"]:focus,
 .kontakt-formular input[type="email"]:focus,
 .kontakt-formular textarea:focus {
-    border-color: #ffeb3b;
-    box-shadow: 0 0 8px rgba(255, 235, 59, 0.5);
+    border-color: #e53935;
+    box-shadow: 0 0 8px rgba(229, 57, 53, 0.3);
 }
 
 .kontakt-formular textarea {
@@ -125,11 +127,10 @@ main {
 
 /* Footer */
 footer {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(50, 50, 50, 0.8);
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 30px;
     border-top: 4px solid #ffeb3b;
 }
 
@@ -137,10 +138,6 @@ footer {
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
-        gap: 15px;
-    }
-
-    header h1 {
-        font-size: 2em;
+        gap: 10px;
     }
 }
