@@ -1,38 +1,32 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt - Einsatzmeldungen</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Kontakt</h1>
-  </header>
-  <nav>
-    <a href="index.html">Start</a>
-    <a href="einsaetze.html">Einsätze</a>
-    <a href="notrufnummern.html">Notrufnummern</a>
-    <a href="ueber_uns.html">Über uns</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
-  <main>
-    <div class="card">
-      <h2>Schreibe uns</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Dein Name">
-
-        <label for="nachricht">Nachricht:</label>
-        <textarea id="nachricht" name="nachricht" rows="5" placeholder="Deine Nachricht"></textarea>
-
-        <button type="submit">Nachricht senden</button>
-      </form>
+<!-- Kontaktbereich -->
+<section id="kontakt">
+  <div class="container">
+    <h2>Kontaktiere uns</h2>
+    <p>Wir sind für dich da – schreib uns dein Anliegen!</p>
+    
+    <form action="#" method="post" id="kontakt-formular">
+      <div class="form-group">
+        <label for="name"><i class="fas fa-user"></i> Name</label>
+        <input type="text" id="name" name="name" placeholder="Dein Name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email"><i class="fas fa-envelope"></i> E-Mail</label>
+        <input type="email" id="email" name="email" placeholder="deine@mail.de" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="nachricht"><i class="fas fa-comment-dots"></i> Nachricht</label>
+        <textarea id="nachricht" name="nachricht" rows="5" placeholder="Deine Nachricht an uns" required></textarea>
+      </div>
+      
+      <button type="submit" class="btn">Nachricht senden</button>
+    </form>
+    
+    <div class="notfall-box">
+      <h3><i class="fas fa-exclamation-triangle"></i> Notfall?</h3>
+      <p>Rufe sofort den Notruf <strong>112</strong> an!</p>
+      <p>Weitere Notfallnummern findest du auf unserer <a href="#notrufnummern">Notrufnummern-Seite</a>.</p>
     </div>
-  </main>
-  <footer>
-    <p>&copy; 2025 Einsatzmeldungen. Alle Rechte vorbehalten.</p>
-  </footer>
-</body>
-</html>
+  </div>
+</section>
